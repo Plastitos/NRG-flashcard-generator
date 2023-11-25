@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer-container">
+            <div class="timer-controls">
+                <button onclick="startOrResumeTimer()">Start</button>
+                <button onclick="stopTimer()">Stop</button>
+                <button id="toggle" onclick="toggleTimerVisibility()">Show/Hide</button>
+            </div>
+            <div class="timer" id="timer">
+                <span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+        </div>
+        <h1>Flashcard Generator</h1>
+        <textarea id="flashcardInput" placeholder="Enter flashcard content"></textarea>
+        <button onclick="generateFlashcard()">Generate Flashcard</button>
+        <div id="flashcardContainer"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
